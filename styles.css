@@ -1,0 +1,217 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.total-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleta-de-la-suerte-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Anton', sans-serif;
+}
+
+.imagen-container, .video-container{
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#galleta-de-la-fortuna-animada, #galleta-de-la-fortuna-video {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin: 0 auto;
+}
+
+
+.rotada {
+  transform: rotate(15deg);
+}
+
+.text-container {
+  position: absolute;
+  width: 70%;
+  height: 28%;
+  top: 31%;
+  left: 15%;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  position: absolute;
+  width: 90%;
+  height: 10%;
+  top: 85%;
+  left: 5%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fortune-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+  
+#fortuneText {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  outline: none;
+  width: 50%;
+}
+
+.cuadrado-blanco {
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+  
+.cuadrado-blanco:hover {
+  background-color: lightgray;
+}
+  
+.blog-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+}
+
+article img {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  background-color: #333;
+  padding: 5px 0;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.lista-ingredientes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingrediente {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ingrediente input[type="checkbox"] {
+  margin-right: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.ingrediente input[type="checkbox"]:checked {
+  background-color: rgb(255, 187, 60);
+  border: 2px solid rgb(255, 187, 60);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z'/%3E%3C/svg%3E");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pasos-receta {
+  padding: 0;
+  list-style: decimal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pasos-receta li {
+  width: 80%;
+  left: 10%;
+  margin-bottom: 10px;
+}

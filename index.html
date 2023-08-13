@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abre tu galleta de la fortuna y elige fortunas para otros. Explora recetas y curiosidades sobre las galletas de la fortuna. Diviértete compartiendo buenos deseos en línea.">
+  <title>Tu Galleta de la Fortuna</title>
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3420833257390624" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Teko&display=swap');
+</style>
+
+<body>
+  <div class="total-container">
+
+    <div class="galleta-de-la-suerte-container">
+
+      <div class="imagen-container" id="imgContainer">
+        <img src="content/galleta-de-la-fortuna.png" id="galleta-de-la-fortuna-animada" alt="imagen de una galleta de la fortuna png">
+        <div class="text-container" id="textContainer" style="display: none;">
+          <p id="message"></p>
+        </div>
+        <div class="timer-container" id="timerContainer" style="display: none">
+          <p id="timer"></p>
+        </div>
+      </div>
+
+      <div class="video-container" id="videoContainer" style="display: none;">
+        <video id="galleta-de-la-fortuna-video">
+          <source src="content/galleta-de-la-fortuna-abriendose-animacion.mp4" alt="video de galleta de la fortuna abriendose animacion" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="fortune-container" id="fortuneContainer"  style="display: none;">
+        <input type="text" id="fortuneText" placeholder="Escribe la fortuna de otra persona..." maxlength="70">
+        <button onclick="enviarInput()" class="cuadrado-blanco">Enviar</button>
+      </div>
+
+      <div class="mensaje-final-container" id="mensajeEnviado" style="display: none; text-align: center;">
+        <p>Tu mensaje ya está escrita en una galleta!</p>
+      </div>
+
+      <div class="sonidos">
+        <audio src="content/crujido.mp3" id="crujido"></audio>
+        <audio src="content/musica-epica.mp3" id="musica-epica"></audio>
+      </div>
+
+    </div>
+
+    <div class="blog-container" id="blogContainer" style="display: none;">
+      <header>
+        <h1>Galleta de la Fortuna</h1>
+        <h2>(幸运饼干)</h2>
+      </header>
+    
+      <main>
+        <article>
+          <div class="datos-container"  id="blogContainer">
+          <p>Mientas esperas a tu próxima galleta de la fortuna, podes leer unos datos curiosos e incluso su receta mágica!</p>
+          <h2>El Origen de la suerte</h2>
+          <p>Sabías que las galletas de la fortuna no son de China? Sí, parece que nos comemos cualquier mentira...<br>En realidad se crearon en Estados Unidos, más precisamente en California al final del siglo XIX.<br>Siempre creimos que eran de origen asiático porque se usaron más en los restaurantes chinos y japoneses como el postre final.</p>
+          <img src="content/galletas-de-la-fortuna-reales.png" alt="Galleta de la fortuna">
+          <h2>Inventor Desconocido</h2>
+          <p>A pesar de su popularidad, no se sabe con certeza quién inventó las galletas de la fortuna. Varias personas han reclamado la invención, pero no hay una evidencia sólida que respalde ninguna de estas afirmaciones.</p>
+          <img src="content/chef-misterioso.png" alt="Chef Misterioso">
+          </div>
+    
+          <div class="receta-container"  id="blogContainer">
+            <div class="lista-ingredientes">
+              <h2>Receta de Galleta de la Fortuna<br>(15 unidades)</h2>
+              <ul>
+                <li class="ingrediente">
+                  <input type="checkbox" id="ingrediente-0">
+                  <label for="ingrediente-0">1/2 taza de harina</label>
+                </li>
+      
+                <li class="ingrediente">
+                  <input type="checkbox" id="ingrediente-1">
+                  <label for="ingrediente-1">1/4 taza de azúcar</label>
+                </li>
+      
+                <li class="ingrediente">
+                  <input type="checkbox" id="ingrediente-2">
+                  <label for="ingrediente-2">1/4 taza de aceite</label>
+                </li>
+      
+                <li class="ingrediente">
+                  <input type="checkbox" id="ingrediente-3">
+                  <label for="ingrediente-3">1 cdta de sal</label>
+                </li>
+                <li class="ingrediente">
+                  <input type="checkbox" id="ingrediente-4">
+                  <label for="ingrediente-4">1 cdta de Esencia de Vainilla</label>
+                </li>
+                <li class="ingrediente">
+                    <input type="checkbox" id="ingrediente-5">
+                    <label for="ingrediente-5">2 huevos (solo la clara)</label>
+                </li>
+                <li class="ingrediente">
+                    <input type="checkbox" id="ingrediente-6">
+                    <label for="ingrediente-6">15 Tiritas de papel de 8 cm</label>
+                </li>
+              </ul>
+      
+              <h2>Procedimientos a seguir</h2>
+      
+              <ol class="pasos-receta">
+                <li>Tener preparados todos los ingredientes, no te olvides de los mensajes!</li>
+                <li>Mezclar la harina con el azúcar, la sal, el aceite y los huevos. Bata hasta obtener una pasta suave, luego agregar la Esencia de Vainilla</li>
+                <li>Engrasar una bandeja, poner cucharadas de la mezcla para formar circulos de 10 cmd de díametro</li>
+                <li>Calentar entre 5 y 8 minutos en el horno a 180°C con el precalentado</li>
+                <li>Sacar de a uno porque sino se te van a secar rápido, con el horno ya apagado obvio</li>
+                <li>Poner el mensaje dentro del circulo, doblar a la mitad para generar una media luna y luego volver a doblar hacia abajo</li>
+                <li>Se puede dejar reposar dentro de una taza asi mantiene su forma</li>
+                <li>Recordá hacer todo esto rápido porque sino se van a secar y se te va a quebrar la galleta</li>
+              </ol>
+            </div>  
+            <div class="youtube-video" id="blogContainer">
+              <iframe width="315" height="700" src="https://www.youtube.com/embed/8VnBF6wnZIs?loop=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <p>&copy; 2023 Tu Galleta de la Fortuna | Apoyame por Mercado Pago con $10 pesitos! ALIAS: agustinpagos</p>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="timer.js"></script>
+  <script src="sendFortune.js"></script>
+</body>
+</html>
