@@ -46,7 +46,7 @@ function getRandomMessage() {
 // Función para establecer la cookie con una duración de 24 horas
 function setCookie() {
   const date = new Date();
-  date.setTime(date.getTime() + 0.5 * 60 * 1000); //24 * 60 * 60 * 1000); // Caduca en 24 horas
+  date.setTime(date.getTime() + 24 * 60 * 60 * 1000); // Caduca en 24 horas
   const expires = "expires=" + date.toUTCString();
   document.cookie = cookieName + "=true;" + expires + ";SameSite=Strict;path=/";
 }
@@ -112,7 +112,7 @@ function cambiarImagen() {
     // Luego de que el video termine mostrar mensaje
     video.onended = function() {
       setCookie();
-      iniciarTemporizador(30);
+      iniciarTemporizador(86400);
       document.cookie = "fortuner=true;SameSite=Strict;path=/";
 
       videoContainer.style.display = "none";

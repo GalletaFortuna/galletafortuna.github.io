@@ -26,9 +26,15 @@ function iniciarTemporizador(tiempoRestante) {
 }
 
 function convertirTiempoAMinutos(segundos) {
-    var minutos = Math.floor(segundos / 60);
+    var horas = Math.floor(segundos / 3600);
+    var minutos = Math.floor((segundos % 3600) / 60);
     var segundosRestantes = segundos % 60;
-    return minutos + ":" + (segundosRestantes < 10 ? "0" : "") + segundosRestantes;
+
+    var tiempoFormateado = (horas < 10 ? "0" : "") + horas + ":" +
+                           (minutos < 10 ? "0" : "") + minutos + ":" +
+                           (segundosRestantes < 10 ? "0" : "") + segundosRestantes;
+
+    return tiempoFormateado;
 }
 
 function obtenerEstadoTemporizador() {
